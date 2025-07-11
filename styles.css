@@ -1,0 +1,49 @@
+/* Reset default margin */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fixed navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+  background-color: #555;
+  color: #ffcc00;
+}
+
+/* Navbar style when scrolled */
+.navbar.scrolled {
+  background-color: #222;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Page sections for testing */
+section {
+  height: 100vh;
+  padding-top: 60px; /* compensate for fixed nav */
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
